@@ -4,7 +4,7 @@ import pandas as pd
 import math
 
 #this reads the count txt as a dataframe
-counts = pd.read_csv('argR-counts-matrix.txt', header=None,sep='\t')
+counts = pd.read_csv('test_files/argR-counts-matrix.txt', header=None,sep='\t')
 
 #this uses the psuedo count method to add one to each cell in the matrix 
 #to remove 0s
@@ -54,7 +54,7 @@ seqs = []
 cnt = 0
 
 #reads through the upstream gene sequences
-with open('E_coli_K12_MG1655.400_50','r') as read:
+with open('test_files/E_coli_K12_MG1655.400_50','r') as read:
     for x in read:
         #this prints the current line number
         #This program takes around 5 minutes to run so this lets the user
